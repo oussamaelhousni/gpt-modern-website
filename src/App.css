@@ -39,7 +39,7 @@
     background: var(--gradient-text);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .section__padding {
