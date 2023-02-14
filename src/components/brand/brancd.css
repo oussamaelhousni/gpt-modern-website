@@ -1,0 +1,13 @@
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+    background: #000;
+}
+
+.brand img {
+    max-width: 115px;
+}

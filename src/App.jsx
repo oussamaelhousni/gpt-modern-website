@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar } from "./components";
+import { Brand, Navbar } from "./components";
 import "./App.css";
 import { Header } from "./containers";
 function App() {
@@ -9,6 +9,7 @@ function App() {
                 <Navbar />
                 <Header />
             </div>
+            <Brand />
         </div>
     );
 }
