@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    alignn-items: center;
+}
+
+.navbar-links_logo {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links_logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.navbar-links_container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-links_container li a,
+.navbar__sign a,
+.navbar__menu__sign a,
+.navbar__menu__links__container li a {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar__sign button,
+.navbar__menu__sign button {
+    padding: 0.6rem 1.5rem;
+    background: #ff4820;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: var(--font-family);
+    border-radius: 3px;
+    font-wight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.navbar__menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.navbar__menu__links__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    text-align: end;
+    position: absolute;
+    padding: 2rem;
+    margin-top: 1rem;
+    background: var(--color-footer);
+    min-width: 210px;
+    top: 40px;
+    right: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.navbar__menu__sign {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar-links_container {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: flex;
+    }
+
+    .navbar__menu__links__container {
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        padding: 2rem;
+    }
+
+    .navbar__sign {
+        display: none;
+    }
+
+    .navbar__menu__links__container {
+        top: 20px;
+    }
+
+    .navbar__menu__sign {
+        display: flex;
+    }
+}
