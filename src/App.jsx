@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Brand, Navbar } from "./components";
 import "./App.css";
-import { Header } from "./containers";
+import { Header, WhatGPT3, Features, Possibility } from "./containers";
 function App() {
     return (
         <div className="App">
@@ -10,6 +10,9 @@ function App() {
                 <Header />
             </div>
             <Brand />
+            <WhatGPT3 />
+            <Features />
+            <Possibility />
         </div>
     );
 }

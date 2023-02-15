@@ -26,7 +26,7 @@ const Menu = () => {
     );
 };
 const Navbar = () => {
-    const [toggleMenu, setToggleMenu] = useState(true);
+    const [toggleMenu, setToggleMenu] = useState(false);
     return (
         <div className="navbar">
             <nav className="navbar-links">

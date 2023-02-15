@@ -1,0 +1,150 @@
+.gpt {
+    background: var(--color-footer);
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+}
+
+.gpt__feature {
+    display: flex;
+}
+
+.gpt__feature,
+.gpt__features-container {
+    margin: 0;
+}
+.gpt__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem 0 2rem;
+}
+.gpt__heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.gpt__heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.gpt__features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+.gpt__features .feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.gpt__features .feature__text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .gpt__heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .gpt__heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gpt__feature .feature {
+        flex-direction: column;
+    }
+
+    .gpt__feature .feature__text {
+        margin-top: 0.5rem;
+    }
+
+    .gpt__heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .gpt {
+        padding: 1.5rem;
+    }
+    .gpt__features .feature {
+        margin: 0;
+        margin-bottom: 1rem;
+        min-width: auto;
+    }
+
+    .gpt__heading h1 {
+        font-size: 20px;
+    }
+
+    ..gpt__features .feature {
+        min-width: none;
+        margin: 1rem 0;
+        max-width: 100%;
+    }
+}

@@ -54,3 +54,7 @@ ul {
         transform: scale(1);
     }
 }
+
+body {
+    background: #000;
+}
